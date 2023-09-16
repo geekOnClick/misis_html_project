@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <title>KC News</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <nav class="navigation grid header__navigation">
+                    <a href="./index.html" class="navigation__logo"
+                        ><img class="navigation__image" src="img/logo.svg" alt="logo"
+                    /></a>
+                    <ul class="navigation__list">
+                        <li class="navigation__item">
+                            <a href="./index.html" class="navigation__link navigation__link--active"
+                                >Главная</a
+                            >
+                        </li>
+                        <li class="navigation__item">
+                            <a href="./fashion.html" class="navigation__link">Мода</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="./tech.html" class="navigation__link">Технологии</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="./politics.html" class="navigation__link">Политика</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="./sport.html" class="navigation__link">Спорт</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+            <section class="articles">
+                <div class="container grid">
+                    <section class="articles__big-column"></section>
+                    <section class="articles__small-column"></section>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <nav class="navigation grid footer__navigation">
+                    <a href="#" class="navigation__logo"
+                        ><img class="navigation__image" src="img/logo.svg" alt="logo"
+                    /></a>
+                    <ul class="navigation__list">
+                        <li class="navigation__item">
+                            <a href="./index.html" class="navigation__link navigation__link--active"
+                                >Главная</a
+                            >
+                        </li>
+                        <li class="navigation__item">
+                            <a href="./fashion.html" class="navigation__link">Мода</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="./tech.html" class="navigation__link">Технологии</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="./politics.html" class="navigation__link">Политика</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="./sport.html" class="navigation__link">Спорт</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="footer__column">
+                    <p class="footer__text">Сделано на Frontend курсе в Спорт.Courses</p>
+                    <p class="footer__copyright">@ 2023</p>
+                </div>
+            </div>
+        </footer>
+        <!-- 
+        <template id="main-news-item">
+            <article class="main-article">
+                <div class="main-article__image-container">
+                    <img class="main-article__image" src="./img/1.jpg" alt="image" />
+                </div>
+                <div class="main-article__content">
+                    <span class="article-category main-article__category">Технологии</span>
+                    <h2 class="main-article__title">
+                        Отец жанра. Как уже забытый трип-хоп определяет самую популяр…
+                    </h2>
+                    <p class="main-article__text">
+                        Новая мода на топовые наряды необычных цветов. В сезоне – топики,
+                        шорты-боксеры, сланцы и сандалии. А также большие солнечные очки и яркая
+                        шляпка.
+                    </p>
+                    <span class="article-source main-article__source">Источник</span>
+                </div>
+            </article>
+        </template> -->
+
+        <!-- <template id="small-article-item">
+            <article class="small-article">
+                <h2 class="small-article__title">
+                    В американском зоопарке празднуют рождение гориллы: видео
+                </h2>
+                <p class="small-article__caption">
+                    <span class="article-date small-article__date">12 июля</span>
+                    <span class="article-source small-article__source">Источник</span>
+                </p>
+            </article>
+        </template> -->
+
+        <script src="./data.js"></script>
+        <script>
+            renderNews();
+        </script>
+    </body>
+</html>
